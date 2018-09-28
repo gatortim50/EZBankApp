@@ -1,0 +1,20 @@
+<ActionBar class="action-bar">
+  <Label class="action-bar-title" text="Balance"></Label>
+</ActionBar>
+
+<ScrollView>
+  <StackLayout>
+    <Label class="h1 text-center m-y-10" text="Balance"></Label>
+    <Image src="~/images/balance.jpg" height="10"></Image>
+    {{title}}
+    <Label class="footnote text-center m-y-10" text="Tim McKee ©2018"></Label>
+    <StackLayout orientation="horizontal" horizontalAlignment="center">
+      <Button class="btn btn-primary btn-rounded-sm btn-active m-r-20"
+        text="Home" [nsRouterLink]="['/home']">
+      </Button>
+      <Button class="btn btn-primary btn-rounded-sm btn-active m-l-20"
+        text="Payments" [nsRouterLink]="['/payments']">
+      </Button>
+    </StackLayout>
+  </StackLayout>
+</ScrollView>
